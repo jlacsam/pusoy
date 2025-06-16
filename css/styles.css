@@ -1,0 +1,246 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	background-image: url(/images/poker-table-1024x768.png);
+}
+canvas {
+	background-image: url(/images/poker-table-1024x768.png);
+}
+canvas.hide {
+	position: fixed;
+	animation-name: hidePlayView;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+canvas.show {
+	position: fixed;
+	animation-name: showPlayView;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+/* This must be done programmatically.
+@keyframes hidePlayView {
+	to { left:800px; }
+} */
+@keyframes showPlayView {
+	to { left: 0px; }
+}
+div.gamesView {
+	margin: auto;
+	padding: 20px;
+	width: 728px;
+}
+div.hand {
+	height: 80px;
+	width: 142px;
+	overflow: hidden;
+}
+div.card1 {
+	font-size: 18px;
+	position: relative;
+	text-align: center;
+	transform: matrix(1,-0.13,0.13,1,75,10);
+	width: 24px;
+}
+div.card2 {
+	font-size: 18px;
+	position: relative;
+	text-align: center;
+	transform: matrix(1,-0.26,0.26,1,40,-12);
+	width: 24px;
+}
+div.card3 {
+	font-size: 18px;
+	position: relative;
+	text-align: center;
+	transform: matrix(1,-0.39,0.39,1,13,-30);
+	width: 24px;
+}
+div.cardFace {
+	font-size: 40px;
+	height: 140px;
+	position: relative;
+	text-align: center;
+	transform: matrix(1,-0.13,0.13,1,100,-110);
+	width: 80px;
+}
+div.black {
+	color: black;
+}
+div.red {
+	color: red;
+}
+table, th, tr, td, p {
+	margin: 0;
+}
+table {
+	border-style: none;
+	border-collapse: collapse;
+	overflow: hidden;
+	padding: 0;
+}
+table.gamesView {
+	background-color: lightgray;
+	border-radius: 20px;
+	box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.3);
+	width: 728px;
+}
+table.level {
+	width: 100%;
+}
+table.header {
+	width: 100%;
+}
+table.games {
+	width: 100%;
+}
+table.cardFace {
+	height: 100%;
+	width: 100%;
+}
+th {
+	background-image: linear-gradient(to bottom, dimgray, transparent);
+	padding-left: 5px;
+	padding-right: 5px;
+}
+tr.game {
+	height: 80px;
+	border-bottom: 2px solid lightgray;
+}
+tr.card_7_8 {
+	line-height: 28px;
+}
+tr.card_9_10 {
+	line-height: 35px;
+}
+td {
+	padding: 0;
+}
+td.buttons {
+	text-align: right;
+	vertical-align: middle;
+}
+td.gameNo {
+	text-align: center;
+	background-color: #101010;
+	width: 80px;
+}
+td.gameHand {
+	background-color: white;
+	background-image: 
+		linear-gradient(45deg, #F0F0F0 25%, transparent 25%), 
+		linear-gradient(-45deg, #F0F0F0 25%, transparent 25%), 
+		linear-gradient(45deg, transparent 75%, #F0F0F0 75%), 
+		linear-gradient(-45deg, transparent 75%, #F0F0F0 75%);
+	background-size: 10px 10px;
+	background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+}
+td.gameHandPlain {
+	background-color: white;
+	background-image: url('/images/tricard_plain.png');
+	text-align: left;
+	vertical-align: top;
+}
+td.gameHandJack {
+	background-color: white;
+	background-image: url('/images/tricard_jack.png');
+	text-align: left;
+	vertical-align: top;
+}
+td.gameHandQueen {
+	background-color: white;
+	background-image: url('/images/tricard_queen.png');
+	text-align: left;
+	vertical-align: top;
+}
+td.gameHandKing {
+	background-color: white;
+	background-image: url('/images/tricard_king.png');
+	text-align: left;
+	vertical-align: top;
+}
+td.potOfMetal {
+	background-color: white;
+	width: 80px;
+	text-align: center;
+	vertical-align: middle;
+}
+td.cardFace {
+	text-align: center;
+	vertical-align: middle;
+}
+td.bronze {
+	color: darkgoldenrod;
+}
+td.clay {
+	color: sienna;
+}
+td.gold {
+	color: gold;
+}
+td.silver {
+	color: white;
+}
+td.steel {
+	color: silver;
+}
+td.potOfBronze {
+	background-image: url('/images/pot_of_bronze.png');
+}
+td.potOfClay {
+	background-image: url('/images/pot_of_clay.png');
+}
+td.potOfGold {
+	background-image: url('/images/pot_of_gold.png');
+}
+td.potOfSilver {
+	background-image: url('/images/pot_of_silver.png');
+}
+td.potOfSteel {
+	background-image: url('/images/pot_of_steel.png');
+}
+em {
+	color: gold;
+	font-style: normal;
+}
+img.activity {
+	content: url('/images/activity.png');
+	background: url('/images/activity.png');
+	width: 25px;
+	height: 25px;
+}
+img.leaderboard {
+	content: url('/images/leaderboard.png');
+	background: url('/images/leaderboard.png');
+	width: 25px;
+	height: 25px;
+}
+img.padlock {
+	content: url('/images/padlock.png');
+	background: url('/images/padlock.png');
+	width: 25px;
+	height: 25px;
+}
+p.levelHeader {
+	color: white;
+}
+p.gameLabel {
+	font-family: arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+p.gameNo {
+	font-family: arial;
+	font-size: 30px;
+	font-weight: bold;
+}
+p.timeLeft {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: normal;
+}

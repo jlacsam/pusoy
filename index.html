@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pusoy|Chinese Poker</title>
+
+		<script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+		<script type="text/javascript">
+			Parse.initialize("y411bWpJ6qXpXo0RXFLvV2VdLuTU5ozIskq3GOA0","m5CxKYJOpaL9RiZsPpAaayC32IbQoFr5pW0AyMi8");
+			Parse.serverURL = 'https://parseapi.back4app.com/'
+		</script>
+
+		<script src="pixi/pixi.min.js"></script>
+		<script src="scripts/seedrandom.min.js"></script>
+
+		<!-- scripts for playview -->
+		<script src="scripts/constants.js"></script>
+		<script src="scripts/animate.js"></script>
+		<script src="scripts/themes.js"></script>
+		<script src="scripts/opponents.js"></script>
+		<script src="scripts/card.js"></script>
+		<script src="scripts/cardview.js"></script>
+		<script src="scripts/slotview.js"></script>
+		<script src="scripts/deck.js"></script>
+		<script src="scripts/player.js"></script>
+		<script src="scripts/poker.js"></script>
+		<script src="scripts/handinfoview.js"></script>
+		<script src="scripts/levelview.js"></script>
+		<script src="scripts/titleview.js"></script>
+		<script src="scripts/submitview.js"></script>
+		<script src="scripts/playview.js"></script>
+		<script src="scripts/utilities.js"></script>
+
+		<!-- scripts for signin & data -->
+		<script src="scripts/playerdata.js"></script>
+		<script src="scripts/gamedata.js"></script>
+		<script src="scripts/handdata.js"></script>
+		<script src="scripts/pokercloud.js"></script>
+		<script src="scripts/gamesdb.js"></script>
+
+		<!-- scripts for gamesview -->
+		<script src="scripts/gamesview.js"></script>
+		<script src="scripts/mainview.js"></script>
+
+		<link rel="stylesheet" href="css/styles.css">
+
+	</head>
+	<body>
+		<div id='gamesDiv' class='gamesView'>
+		<!-- gamesView goes here. -->
+		</div>
+		<canvas id='playView'></canvas>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
