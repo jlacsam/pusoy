@@ -58,7 +58,7 @@ The game is built using HTML5, JavaScript, and the PixiJS rendering engine, with
 - **Theme System**: Visual customization options
 
 ## Project Structure
-
+```
 ├── css/                  # Stylesheets
 ├── images/               # Game assets and graphics
 ├── pixi/                 # PixiJS library
@@ -76,7 +76,7 @@ The game is built using HTML5, JavaScript, and the PixiJS rendering engine, with
 │   ├── pokercloud.js     # Cloud synchronization
 │   └── ...               # Additional game components
 └── index.html            # Main application page
-
+```
 ## Game Rules
 
 Pusoy Dos (Chinese Poker) is played with the following rules:
