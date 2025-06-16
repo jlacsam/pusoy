@@ -59,8 +59,6 @@ The game is built using HTML5, JavaScript, and the PixiJS rendering engine, with
 
 ## Project Structure
 
-
-/html
 ├── css/                  # Stylesheets
 ├── images/               # Game assets and graphics
 ├── pixi/                 # PixiJS library
