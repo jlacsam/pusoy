@@ -5,7 +5,7 @@ A web-based implementation of Pusoy (also known as Chinese Poker), a popular car
 ## Overview
 
 This web application allows players to:
-- Play Pusoy Dos/Chinese Poker online
+- Play Pusoy/Chinese Poker online
 - Compete against other players
 - Track game statistics and progress
 - Earn virtual gold coins
