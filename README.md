@@ -1,6 +1,6 @@
 # Pusoy / Chinese Poker Web Application
 
-A web-based implementation of Pusoy Dos (also known as Chinese Poker), a popular card game where players arrange 13 cards into three poker hands and compete against opponents.
+A web-based implementation of Pusoy (also known as Chinese Poker), a popular card game where players arrange 13 cards into three poker hands and compete against opponents.
 
 ## Overview
 
